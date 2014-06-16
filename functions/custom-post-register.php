@@ -49,7 +49,8 @@ register_taxonomy( "works-categories",
 	array( 	"hierarchical" => true,
 			"labels" => array('name'=>"Creative Fields",'add_new_item'=>"Add New Field"), 
 			"singular_label" => __( "Field", 'dronetv' ), 
-			"rewrite" => array( 'slug' => 'fields', // This controls the base slug that will display before each term 
+			"rewrite" => array( 'slug' => 'media', // Chris edit
+			// "rewrite" => array( 'slug' => 'fields', // This controls the base slug that will display before each term 
 							'with_front' => false)
 		 ) 
 );
@@ -69,7 +70,8 @@ if ( ! function_exists( 'md_works_edit_columns' ) ) {
 		"cb" => "<input type=\"checkbox\" />",
 		"title" => __( "Project Title", 'dronetv' ),
 		"description" => __( "Description", 'dronetv' ),
-		"works-categories" => __( "Fields", 'dronetv' ),
+		"works-categories" => __( "Media", 'dronetv' ), // chris edit
+		//"works-categories" => __( "Fields", 'dronetv' ),
 		//"work_tags" => __( "Tags", 'dronetv' ),
 		"date" => __( "Date", 'dronetv' )
 	  );
