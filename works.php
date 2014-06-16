@@ -30,7 +30,7 @@ $getbr = getThumb($thumb);
 ?>         
          <div class="columns navibg withall border-color">
             <div class="four columns alpha">
-            	<h3><?php _e('Works','dronetv'); ?></h3>
+            	<h3><?php _e('Selected works','dronetv'); ?></h3>
             </div>
             
             <div class="twelve columns omega">
@@ -53,7 +53,7 @@ $getbr = getThumb($thumb);
                     <?php	} ?>
                     </div>
                     <select class="responsiveselect reschange border-color">
-                    	<option value="all" selected=""><?php _e('Creative Fields...','dronetv')?></option>
+                    	<option value="all" selected=""><?php _e('Sort by media','dronetv')?></option>
                         <?php		
                        foreach ($cats as $catd) { 
                     	?>
