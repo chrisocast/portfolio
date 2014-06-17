@@ -124,8 +124,9 @@ $getbr = getThumb($thumb);
                     	</a>
                 	</div>
                    <div class="thumb_large">
-                   <h5><a href="<?php the_permalink() ?>" class="getworks" data-type="works" data-id="<?php echo $post->ID?>" data-token="<?php echo $token?>"><?php the_title(); ?></a></h5>
-					  <?php the_excerpt(); ?>
+
+                   <!-- h5><a href="<?php the_permalink() ?>" class="getworks" data-type="works" data-id="<?php echo $post->ID?>" data-token="<?php echo $token?>"><?php the_title(); ?></a></h5 -->
+					  <!-- ?php the_excerpt(); ? -->
                     </div>  
                    </div>
             <?php if($p==$cthumbnail[3] && $paste=='') { $p=0; echo '<br class="clear rowseperator">'; }?>
