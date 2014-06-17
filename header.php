@@ -55,7 +55,8 @@
  
 	<!-- CSS
   ================================================== -->
-    <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
+  	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
+
     <!--[if lt IE 9]>
 	<link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri()?>/style_ie.css" />
 	<![endif]-->
@@ -64,6 +65,9 @@
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 
+    <link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri() ?>/style_custom.css" />
+	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400' rel='stylesheet' type='text/css'>
+	
 	<!-- Favicons
 	================================================== -->
 	<link rel="apple-touch-icon" href="<?php echo get_template_directory_uri() ?>/images/apple-touch-icon.png">

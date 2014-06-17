@@ -1,0 +1,16 @@
+/*
+These are custom styles to improve or replace the regular theme styles in 
+the style.css file.
+*/
+body {
+	background: background: #e2e2e2;
+	background-image: none;
+}
+
+a.main-logo{
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 78px;
+	font-weight: 300;
+}
+
+/* Live wordpress instance login: admin, 2HEJk3ub1 */
