@@ -13,4 +13,21 @@ a.main-logo{
 	font-weight: 300;
 }
 
+.works-title h3 {
+	float: left;
+	letter-spacing: -0.02em;
+}
+
+.works-title h1 {
+	float:left;
+	color: #666;
+	font-size: 24px;
+	margin: 8px 0 0 7px;
+	letter-spacing: -0.02em;
+}
+
+footer {
+	margin-top: 0;
+}
+
 /* Live wordpress instance login: admin, 2HEJk3ub1 */
