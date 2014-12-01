@@ -14,11 +14,11 @@
 	 */
 	global $page, $paged;
 
-	wp_title( '|', true, 'right' ); 
+	wp_title( '-', true, 'right' ); 
 	
 	// Add the blog name.
+	echo 'Sculpture and artwork by ';
 	echo get_bloginfo( 'name' );
-	
 	
 	if(!is_single()) { 
 		if(of_get_option('md_header_logo_subtext')) { 
@@ -29,7 +29,7 @@
 	/// CREATE DESCRIPTION
 	if(is_single()) { 
 		$post = $wp_query->post;
-		$descrip = strip_tags($post->post_content);
+		$descrip = get_the_title( $ID ).' - '.strip_tags($post->post_content);
 		$descrip_more = '';
 			if (strlen($descrip) > 155) {
 				$descrip = substr($descrip,0,155);
@@ -40,14 +40,14 @@
 		$descripwords = preg_split('/[\n\r\t ]+/', $descrip, -1, PREG_SPLIT_NO_EMPTY);
 		array_pop($descripwords);
 		$descrip = implode(' ', $descripwords) . $descrip_more; 
-	}else{ 
-		$descrip = of_get_option('md_header_seo_description');
+	}else{
+
+		$descrip = get_the_title( $ID ).' - '.of_get_option('md_header_seo_description');
 	}
 	  ?></title>
 	<meta name="description" content="<?php echo $descrip; ?>">
 	<meta name="keywords" content="<?php echo of_get_option('md_header_seo_keywords'); ?>">
-    
-	<meta name="author" content="drone.tv" />
+	<meta name="author" content="Brian Cast" />
 
 	<!-- Mobile Specific Metas
   ================================================== -->
@@ -70,9 +70,9 @@
 	
 	<!-- Favicons
 	================================================== -->
-	<link rel="apple-touch-icon" href="<?php echo get_template_directory_uri() ?>/images/apple-touch-icon.png">
+	<!-- link rel="apple-touch-icon" href="<?php echo get_template_directory_uri() ?>/images/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="<?php echo get_template_directory_uri() ?>/images/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="<?php echo get_template_directory_uri() ?>/images/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="<?php echo get_template_directory_uri() ?>/images/apple-touch-icon-114x114.png" -->
         
 	<!-- RSS
   ================================================== -->
